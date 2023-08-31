@@ -1,0 +1,13 @@
+PORT=
+
+##en caso de usar pg
+DB_HOST=
+DN_USER=
+DB_PASS=
+DB_NAME=
+DB_PORT=
+
+URI_MONGO=
+
+JWT_SECRET=
+
