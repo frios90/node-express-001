@@ -2,7 +2,6 @@ import 'dotenv/config'
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import './database/connectionMongo.js'
 
 import authRouter from './routes/auth.route.js';
 import linkRouter from './routes/link.route.js';
@@ -23,7 +22,7 @@ app.use(
 // Middlewares
 app.use(cookieParser());
 app.use(express.json())
-app.use(express.urlencoded({extended:false}))
+// app.use(express.urlencoded({extended:false}))
 
 //Routes
 app.use('/api/v1/auth', authRouter)
